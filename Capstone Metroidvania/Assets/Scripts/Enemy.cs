@@ -35,6 +35,7 @@ public class Enemy : MonoBehaviour
         
         //GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Collider2D>().enabled = false;
+        //Destroy(gameObject);
         //this.enabled = false;
         GetComponent<Enemy>().enabled = false;
     }

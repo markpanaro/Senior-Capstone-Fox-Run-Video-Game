@@ -42,13 +42,13 @@ public class PlayerCombat : MonoBehaviour
             enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
         }
 
-    void OnDrawGizmosSelected()
-    {
-        if(attackPoint == null)
-            return;
+   // void OnDrawGizmosSelected()
+    //{
+        //if(attackPoint == null)
+            //return;
 
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-    }
+        //Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    //}
 
     }
 }
