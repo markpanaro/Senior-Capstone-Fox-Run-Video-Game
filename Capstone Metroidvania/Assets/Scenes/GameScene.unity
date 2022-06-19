@@ -6110,6 +6110,7 @@ GameObject:
   - component: {fileID: 1291349044}
   - component: {fileID: 1291349045}
   - component: {fileID: 1291349046}
+  - component: {fileID: 1291349047}
   m_Layer: 7
   m_Name: Opossum
   m_TagString: Untagged
@@ -6158,7 +6159,7 @@ SpriteRenderer:
   m_SortingLayerID: 1328272339
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: baa0c643131554ff99574059ec7da1cc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 64e99bd825bf889419c98e65bc3c708b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6177,7 +6178,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291349040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.36, y: -8.5, z: 0.17825739}
+  m_LocalPosition: {x: 11.68, y: -8.5, z: 0.17825739}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6265,6 +6266,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1291349045}
   maxHealth: 40
+--- !u!114 &1291349047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291349040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8d381d25281ea34ba3a911a6cb8b9c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1810460341
 GameObject:
   m_ObjectHideFlags: 0

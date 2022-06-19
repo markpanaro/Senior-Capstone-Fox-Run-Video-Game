@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Opossum.Idle
+  m_Name: Opossum_Run
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,21 +21,11 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300000, guid: 64e99bd825bf889419c98e65bc3c708b, type: 3}
-    - time: 0.2
-      value: {fileID: 21300000, guid: d8de3e9c316eb454e9c683f2d9be03e7, type: 3}
-    - time: 0.4
-      value: {fileID: 21300000, guid: f54a61382d5ecca408ad11437971cb23, type: 3}
-    - time: 0.6
-      value: {fileID: 21300000, guid: c753121d2cd721749b48c3dc1baffa31, type: 3}
-    - time: 0.8
-      value: {fileID: 21300000, guid: a6c33c29ce0deaa49b4067c171d907b8, type: 3}
-    - time: 1
-      value: {fileID: 21300000, guid: 764fc52f7266843e9b3dac17448f873f, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 5
+  m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -51,17 +41,12 @@ AnimationClip:
       isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 21300000, guid: 64e99bd825bf889419c98e65bc3c708b, type: 3}
-    - {fileID: 21300000, guid: d8de3e9c316eb454e9c683f2d9be03e7, type: 3}
-    - {fileID: 21300000, guid: f54a61382d5ecca408ad11437971cb23, type: 3}
-    - {fileID: 21300000, guid: c753121d2cd721749b48c3dc1baffa31, type: 3}
-    - {fileID: 21300000, guid: a6c33c29ce0deaa49b4067c171d907b8, type: 3}
-    - {fileID: 21300000, guid: 764fc52f7266843e9b3dac17448f873f, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.2
+    m_StopTime: 0.016666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
