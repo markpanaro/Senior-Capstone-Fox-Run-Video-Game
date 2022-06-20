@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OpossumMove : MonoBehaviour
 {
-    Vector3 back = new Vector3(11f,-8.5f, .1782574f);
+    Vector3 back = new Vector3(6f,-8.5f, .1782574f);
     Vector3 forth = new Vector3(-12f, -8.5f, .1782574f);
     float phase = 0;
     float speed = 1;

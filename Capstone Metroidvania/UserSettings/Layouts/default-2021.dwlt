@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 118
+  controlID: 49
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -95,8 +95,8 @@ MonoBehaviour:
     y: 0
     width: 360
     height: 550
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 147
+  controlID: 50
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 148
+  controlID: 51
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -311,14 +311,14 @@ MonoBehaviour:
     - {fileID: -6434305279069290691, guid: 774be0714204ce547bf53ae413429709, type: 2}
     - {fileID: 7260648137425512158, guid: 96cff67c75f784842937ed5c10a62efe, type: 2}
     m_ValueSerializationHelper:
-    - e00: 0.8285808
+    - e00: 0.8663265
       e01: 0
       e02: 0
-      e03: -109.51811
+      e03: -2.3265076
       e10: 0
-      e11: 0.8285808
+      e11: 0.8663265
       e12: 0
-      e13: 153.04152
+      e13: 188.68878
       e20: 0
       e21: 0
       e22: 1
@@ -344,9 +344,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 96cff67c75f784842937ed5c10a62efe, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 774be0714204ce547bf53ae413429709, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 7260648137425512158, guid: 96cff67c75f784842937ed5c10a62efe, type: 2}
+  - m_Target: {fileID: -6434305279069290691, guid: 774be0714204ce547bf53ae413429709, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -428,22 +428,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Textures/Sunnyland/artwork/Sprites/Enemies/opossum
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Textures/Sunnyland/artwork/Sprites/Enemies/opossum
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Projects\capstone\Capstone Metroidvania
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 199}
-    m_SelectedIDs: d4640000
-    m_LastClickedID: 25812
-    m_ExpandedIDs: 00000000826400008464000086640000886400008a6400008c6400008e64000090640000926400009464000096640000986400009a64000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: d8640000
+    m_LastClickedID: 25816
+    m_ExpandedIDs: 000000008a6400008c6400008e64000090640000926400009464000096640000986400009a6400009c6400009e640000a264000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -471,7 +471,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000826400008464000086640000886400008a6400008c6400008e64000090640000926400009464000096640000986400009a640000
+    m_ExpandedIDs: 000000008a6400008c6400008e64000090640000926400009464000096640000986400009a6400009c6400009e640000a0640000a2640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -599,23 +599,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: be5f0000
-      m_LastClickedID: 24510
-      m_ExpandedIDs: 2efbffffda5f0000
+      m_SelectedIDs: 18790000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 82a7ffffc0a7ffff6aa9ffff9aa9ffff36aaffff78aaffff5ebfffff8ec0ffff4cc2ffffb4c6fffff6c6ffff30c9ffff1ccfffffcecfffff52d2ffff98d3ffff56d4fffff0d4ffffb4daffff1cdbffff94dcffffc2ebffff1aecffff58ecffff96ecffffdeecffff36edffff84edfffff6edffffeeeeffff6aefffff2efbffffda5f0000a0870000f48b0000fe8c00009e910000369200003c920000ac9200001a950000b49600009897000056990000589a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Scenery
+        m_OriginalName: Scenery
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 39526
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -701,7 +701,7 @@ MonoBehaviour:
       containerId: overlay-toolbar__top
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -872,9 +872,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.7072353, y: -0.46571845, z: -0.03405181}
+    m_Target: {x: -0.83836746, y: -4.2415257, z: 0}
     speed: 2
-    m_Value: {x: -4.7072353, y: -0.46571845, z: -0.03405181}
+    m_Value: {x: -0.83836746, y: -4.2415257, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -925,9 +925,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10.904868
+    m_Target: 28.987434
     speed: 2
-    m_Value: 10.904868
+    m_Value: 28.987434
   m_Ortho:
     m_Target: 1
     speed: 2
