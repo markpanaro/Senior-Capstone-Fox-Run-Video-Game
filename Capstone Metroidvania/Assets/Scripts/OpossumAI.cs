@@ -6,6 +6,8 @@ public class OpossumAI : MonoBehaviour
 {
     public float speed;
     public float circleRadius;
+    public int maxHealth;
+    int currentHealth;
     private Rigidbody2D EnemyRB;
     public GameObject groundCheck;
     public LayerMask groundLayer;
@@ -15,7 +17,7 @@ public class OpossumAI : MonoBehaviour
     void Start()
     {
         EnemyRB = GetComponent<Rigidbody2D>();
-
+        currentHealth=maxHealth;
     }
 
     // Update is called once per frame
@@ -44,4 +46,31 @@ public class OpossumAI : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundCheck.transform.position, circleRadius);
     }
+
+    public void TakeDamage(int damage)
+    {
+        this.currentHealth -= damage;
+
+        //Play hurt animation
+        //animator.SetTrigger("Hurt");
+
+        if (currentHealth <= 0)
+        {
+          //  Die();
+        }
+    }
+
+    void Die()
+    {
+        //Die animation
+        //animator.SetBool("IsDead", true);
+        
+        //GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
+        Destroy(this.gameObject);
+        //this.enabled = false;
+        //GetComponent<Enemy>().enabled = false;
+    }
+
+
 }

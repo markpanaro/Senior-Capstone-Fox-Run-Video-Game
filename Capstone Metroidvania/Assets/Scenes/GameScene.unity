@@ -5826,6 +5826,7 @@ GameObject:
   - component: {fileID: 649172554}
   - component: {fileID: 649172557}
   - component: {fileID: 649172556}
+  - component: {fileID: 649172558}
   m_Layer: 7
   m_Name: NewOpossum
   m_TagString: Untagged
@@ -5845,8 +5846,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19936cec459d75848ba97a46ac0b6a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -300
+  speed: -350
   circleRadius: 0.5
+  maxHealth: 40
   groundCheck: {fileID: 898351083}
   groundLayer:
     serializedVersion: 2
@@ -5927,8 +5929,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1328272339
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 64e99bd825bf889419c98e65bc3c708b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5988,6 +5990,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &649172558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649172551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e752c454dc6674bafe296227c4e30a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 40
 --- !u!1 &746120796
 GameObject:
   m_ObjectHideFlags: 0
@@ -7348,7 +7363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7e752c454dc6674bafe296227c4e30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
   maxHealth: 40
 --- !u!1 &1291349040
 GameObject:
@@ -7518,7 +7532,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7e752c454dc6674bafe296227c4e30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1291349045}
   maxHealth: 40
 --- !u!114 &1291349047
 MonoBehaviour:
