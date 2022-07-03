@@ -6,7 +6,8 @@ public class Enemy : MonoBehaviour
 {
     //public Animator animator;
 
-    public int maxHealth =40;
+    
+    public int maxHealth;
     int currentHealth; 
 
     // Start is called before the first frame update
@@ -36,6 +37,7 @@ public class Enemy : MonoBehaviour
         //GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Collider2D>().enabled = false;
         Destroy(gameObject);
+        
         //this.enabled = false;
         //GetComponent<Enemy>().enabled = false;
     }
