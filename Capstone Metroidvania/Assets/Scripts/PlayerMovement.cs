@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     float horizontalMove = 0f;
     bool jump = false;
     public static bool canCrouch = false;
+    //public static int totalJumps = 1;
+    //private int numJumps = totalJumps;
     bool crouch = false;
 
     // Update is called once per frame
@@ -22,9 +24,10 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump")) //&& (numJumps > 0))
         {
             jump = true;
+           // numJumps--;
             animator.SetBool("IsJumping", true);
         }
 

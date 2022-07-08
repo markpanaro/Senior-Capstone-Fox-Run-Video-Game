@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class UpgradeDoubleJump : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+     private void OnTriggerEnter2D(Collider2D collider)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(collider.tag == "Player")
+        {
+            CharacterController2D.totalJumps = 2;
+            Destroy(gameObject);
+        }
     }
 }
