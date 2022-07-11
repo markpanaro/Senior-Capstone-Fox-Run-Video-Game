@@ -60,12 +60,6 @@ public class CharacterController2D : MonoBehaviour
 					OnLandEvent.Invoke();
 			}
 		}
-
-		//Reset number of jumps on landing
-		//if(m_Grounded)
-		//{
-		//	PlayerMovement.numJumps = 0;
-		//}
 	}
 
 

@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
             
        if (Input.GetButtonDown("Jump")) //&& (numJumps>0)) //&& (numJumps > 0))
         {
-            if(numJumps<=totalJumps){
+            if(numJumps<totalJumps){
                 jump = true;
                 numJumps++;
                 animator.SetBool("IsJumping", true);
@@ -50,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
     public void OnLanding ()
     {
         animator.SetBool("IsJumping", false);
+        numJumps=0;
     }
 
     public void OnCrouching (bool isCrouching)
@@ -59,10 +60,6 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate ()
     {
-        Debug.Log(numJumps);
-
-        
-
         //Move character
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
             jump = false;
