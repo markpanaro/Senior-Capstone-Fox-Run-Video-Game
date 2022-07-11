@@ -8,7 +8,7 @@ public class UpgradeDoubleJump : MonoBehaviour
     {
         if(collider.tag == "Player")
         {
-            CharacterController2D.totalJumps = 2;
+            PlayerMovement.totalJumps = 2;
             Destroy(gameObject);
         }
     }

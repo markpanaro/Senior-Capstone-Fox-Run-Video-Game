@@ -14,8 +14,8 @@ public class CharacterController2D : MonoBehaviour
 
 	const float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
-	public static int totalJumps = 1;	// Total times the player can jump at once
-	private int numJumps = totalJumps;				// Number of current jumps left
+	//public static int totalJumps = 1;	// Total times the player can jump at once
+	//private int numJumps = totalJumps;				// Number of current jumps left
 	const float k_CeilingRadius = .2f; // Radius of the overlap circle to determine if the player can stand up
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
@@ -62,10 +62,10 @@ public class CharacterController2D : MonoBehaviour
 		}
 
 		//Reset number of jumps on landing
-		if(m_Grounded)
-		{
-			numJumps = totalJumps;
-		}
+		//if(m_Grounded)
+		//{
+		//	PlayerMovement.numJumps = 0;
+		//}
 	}
 
 
@@ -132,11 +132,11 @@ public class CharacterController2D : MonoBehaviour
 			}
 		}
 		// If the player should jump...
-		if (jump && (numJumps>0))  //(m_Grounded && jump) Changed to allow multiple jumps
+		if (jump) //&& (numJumps>0))  //(m_Grounded && jump) Changed to allow multiple jumps
 		{
 			// Add a vertical force to the player.
-			m_Grounded = false;
-			numJumps--;
+			m_Grounded = true;
+			//numJumps--;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 		}
 	}

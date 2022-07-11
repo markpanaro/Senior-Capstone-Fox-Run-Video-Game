@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController2D controller;
     public Animator animator;
 
+    public static int totalJumps = 1;	// Total times the player can jump at once
+	public static int numJumps = 0;	
+
     public float runSpeed = 40f;
 
     float horizontalMove = 0f;
@@ -24,11 +27,15 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-        if (Input.GetButtonDown("Jump")) //&& (numJumps > 0))
+            
+       if (Input.GetButtonDown("Jump")) //&& (numJumps>0)) //&& (numJumps > 0))
         {
-            jump = true;
-           // numJumps--;
-            animator.SetBool("IsJumping", true);
+            if(numJumps<=totalJumps){
+                jump = true;
+                numJumps++;
+                animator.SetBool("IsJumping", true);
+            }   
+                        
         }
 
         if (Input.GetButtonDown("Crouch") && canCrouch)
@@ -38,7 +45,6 @@ public class PlayerMovement : MonoBehaviour
         {
             crouch = false;
         }
-
     }
 
     public void OnLanding ()
@@ -53,8 +59,12 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate ()
     {
+        Debug.Log(numJumps);
+
+        
+
         //Move character
         controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
-        jump = false;
+            jump = false;
     }
 }
