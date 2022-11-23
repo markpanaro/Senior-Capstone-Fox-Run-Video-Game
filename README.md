@@ -1,6 +1,4 @@
 # Fox Run: A Metroidvania Game
-Capstone project repo
-
 
 ## Abstract
 The intention of this project was to gain a better understanding of the processes and procedures behind game development. The Metroidvania genre was chosen as it allows for creative implementation of a variety of components often found within the industry. Development was primarily done using the Unity game engine. Fox Run is not currently available publicly, but the hope is to host it on Steam in the near future. The team gained experience in creating an extensive Player Controller, interactable objects, user interfaces, level design and enemy pathfinding. Areas of the game itself are designed to highlight some of the previously listed components – such as a scene that demonstrates the implementation of the A* pathfinding algorithm with a certain enemy type. However, the game itself is fully playable with an explorable map and refined look and feel that demonstrates the gleaned experience in game design. It would serve as a strong basis for the continued development of a fully-fledged game.
