@@ -32,7 +32,7 @@ Likely the biggest advantage to restarting the project with the knowledge we hav
 
 For this project no functional constraints or standards needed to be addressed. If development continues, publishing to Steam will remain the end goal. At that point we would need to investigate Steam’s standards for games they host.
 
-### IV Testing and Demonstration of Final Product
+## IV Testing and Demonstration of Final Product
 
 Fox Run is not yet finished, and the intention of the project as it stands is to provide a strong basis for continued development. If the game is easy to develop going forwards using the capstone version as a basis – the work will be a true success. However, the ultimate intention of a game is for it to be fun to play. We were able to have several peers test the gameplay of Fox Run with positive results. Players did note that the game was short in its current iteration, but felt the experience was both visually refined and fun. This is honestly the best and most satisfying result possible. It is wonderful to know that the basis for the game is enjoyable as we move into contining development.
 
